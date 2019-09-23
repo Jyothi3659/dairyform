@@ -1,6 +1,6 @@
 from django.shortcuts import render
-from django.views.generic import Listview
+from django.views.generic import ListView
 from dairyformapp.models import Farmer
 
-class FarmerList(Listview):
+class FarmerList(ListView):
     model = Farmer
