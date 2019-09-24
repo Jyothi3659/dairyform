@@ -1,6 +1,6 @@
 from django.urls import path
-from dairyformapp.views import FarmerList
-
+from .import views
+from dairyformapp import views
 urlpatterns = [
-    path('Farmer/', FarmerList.as_view()),
+    path('', views.FarmerFormView.as_view(), name='FarmerFormView'),
 ]

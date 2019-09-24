@@ -10,5 +10,5 @@ class Farmer(models.Model):
     Name = models.CharField(max_length=100)
     Gender = models.CharField(max_length=10, choices=GENDER_CHOICES, default='Female')
     ContactNumber = models.CharField(max_length=10)
-    Age = models.CharField
+    Age = models.IntegerField(default=0)
 
